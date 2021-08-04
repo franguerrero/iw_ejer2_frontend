@@ -1,0 +1,23 @@
+{
+  "title": "Management",
+  "btnNewClient": { "label": "New application" },
+  "btnDeleteClient": { "title": "Delete application" },
+  "btnEditClient": { "title": "Update application" },
+  "btnViewClient": { "title": "View application" },
+  "msgDelete": {
+    "message": "This operation will delete the application entry for all users.",
+    "confirm": "Are you sure you want to continue?"
+  },
+  "msgDeleteSuccess": "Application deleted",
+  "msgDeleteFail": "Unable to delete application",
+  "page_add": {
+    "title": "Add application",
+    "msgAddSuccess": "Application created",
+    "msgAddFail": "Unable to create application"
+  },
+  "page_update": {
+    "title": "Update Application",
+    "msgUpdateSuccess": "Application updated",
+    "msgUpdateFail": "Unable to update application"
+  }
+}

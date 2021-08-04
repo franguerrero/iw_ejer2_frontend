@@ -1,0 +1,19 @@
+{
+  "btnSubmit": "Enviar",
+  "btnDelete": "Eliminar",
+  "btnConfirm": "Confirmar",
+  "btnCancel": "Cancelar",
+  "btnLogout": "Cerrar sesión",
+  "btnViewProfile": "Ver perfil",
+  "sider": {
+    "dashboard": "Aplicaciones",
+    "clients": "Gestión",
+    "account": "Mi cuenta",
+    "profile": "Perfil",
+    "credentials": "Credenciales"
+  },
+  "authError": {
+    "message": "No tiene permisos para acceder a la aplicación con ese usuario. Pruebe con otro usuario o si cree que debería tener permisos contacte con el administrador",
+    "title": "Error"
+  }
+}

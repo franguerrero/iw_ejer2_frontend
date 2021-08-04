@@ -1,0 +1,9 @@
+{
+  
+  "clientId": { "label": "Client ID", "message": "Please enter application ID!" },
+  "name": { "label": "Name", "message": "Please enter application name!" },
+  "description": { "label": "Description", "message": "Please enter a description for the application!" },
+  "rootUrl": { "label": "Root URL", "message": "Please enter application URL!" },
+  "groups": { "label": "Access groups", "message": "Please specify user groups that have access to the application!" },
+  "thumbnail": { "label": "Upload thumbnail", "message": "Please select a thumbnail image for the application!" }
+}

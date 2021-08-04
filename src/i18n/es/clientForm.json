@@ -1,0 +1,9 @@
+{
+  
+  "clientId": { "label": "ID Aplicación", "message": "Por favor introduzca el ID Aplicación" },
+  "name": { "label": "Nombre", "message": "Por favor introduzca el nombre de la Aplicación" },
+  "description": { "label": "Descripción", "message": "Por favor introduzca la descripciópn" },
+  "rootUrl": { "label": "URL Raíz", "message": "Por favor introduzca la URL de la Aplicación" },
+  "groups": { "label": "Grupos de Acceso", "message": "Por favor especifique los grupos que tendrán acceso para la aplicación" },
+  "thumbnail": { "label": "Subir Imagen", "message": "Seleccione la imagen de la aplicación que se mostrará en el inicio de la plataforma" }
+}

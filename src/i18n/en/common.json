@@ -1,0 +1,19 @@
+{
+  "btnSubmit": "Submit",
+  "btnDelete": "Delete",
+  "btnConfirm": "Confirm",
+  "btnCancel": "Cancel",
+  "btnLogout": "Logout",
+  "btnViewProfile": "View Profile",
+  "sider": {
+    "dashboard": "Applications",
+    "clients": "Management",
+    "account": "Account",
+    "profile": "Profile",
+    "credentials": "Credentials"
+  },
+  "authError": {
+    "message": "You are not allowed to access to this application using thses credentials. Use another credentials or for more information contact with the administrator fran.guerrero.aranda@gmail.com",
+    "title": "Error"
+  }
+}

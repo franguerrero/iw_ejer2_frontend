@@ -1,0 +1,23 @@
+{
+  "title": "Gestión",
+  "btnNewClient": { "label": "Nueva aplicación" },
+  "btnDeleteClient": { "title": "Eliminar aplicación" },
+  "btnEditClient": { "title": "Actualizar aplicación" },
+  "btnViewClient": { "title": "Ver aplicación" },
+  "msgDelete": {
+    "message": "Esta operación eliminará la aplicación para todos los usuarios. El cliente de la aplicación en Keycloak (SSO) no se eliminará.",
+    "confirm": "¿Está seguro que quiere continuar?"
+  },
+  "msgDeleteSuccess": "Aplicación eliminada",
+  "msgDeleteFail": "No ha sido posible eliminar la Aplicación",
+  "page_add": {
+    "title": "Añadir Aplicación",
+    "msgAddSuccess": "Aplicación creada",
+    "msgAddFail": "No ha sido posible crear la aplicación"
+  },
+  "page_update": {
+    "title": "Actualizar Aplicación",
+    "msgUpdateSuccess": "Aplicación actualizada",
+    "msgUpdateFail": "No ha sido posible actualizar la aplicación"
+  }
+}

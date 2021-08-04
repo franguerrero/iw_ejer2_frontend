@@ -1,0 +1,297 @@
+#root {
+  overflow: auto;
+  position: relative;
+  height: 100%;
+  width: 100%;
+
+  .ant-layout.splash-view {
+    display: flex;
+    justify-content: center;
+    overflow: auto !important;
+    padding: 0 0 48px;
+  }
+}
+
+#root > .ant-layout {
+  height: 100%;
+  overflow: hidden;
+  width: 100%;
+
+  header {
+    align-items: center;
+    background: white;
+    box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.13);
+    display: flex;
+    padding: 0;
+    z-index: 1029;
+
+    .ant-sider-trigger {
+      margin: 0 16px;
+    }
+
+    .app-title {
+      left: 0;
+      margin-bottom: 0;
+      // position: absolute;
+      right: 0;
+      text-align: center;
+    }
+
+    .logo {
+      width: 256px;
+      align-items: center;
+      display: flex;
+      margin: 0 64px;
+    }
+
+    .btn-account {
+      align-items: center;
+      display: flex;
+      height: 100%;
+
+      .ant-avatar {
+        background: @primary-color;
+      }
+
+      .ant-avatar + div {
+        align-items: flex-start;
+        display: inline-flex;
+        flex-direction: column;
+        line-height: normal;
+        margin-left: 12px;
+      }
+    }
+
+    .btn-account:hover {
+      background: fade(@primary-color, 8%);
+    }
+  }
+
+  .ant-layout-main {
+    background: #f1f7fc;
+    overflow: hidden;
+    position: relative;
+
+    .ant-page-header {
+      background: none;
+
+      .ant-avatar {
+        background: @primary-color;
+        color: white;
+      }
+    }
+
+    .ant-layout-content {
+      display: flex;
+      flex: 1;
+      flex-direction: column;
+      overflow: auto;
+
+      .ant-content-view {
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+        margin-left: 24px;
+        margin-right: 24px;
+        min-height: 100%;
+        overflow: hidden;
+      }
+
+      .ant-content-view > .ant-row {
+        flex: 1;
+
+        .ant-col {
+          .ant-card {
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+            width: 100%;
+          }
+
+          .ant-card.ant-card-with-scroll {
+            .ant-card-body {
+              padding-right: 8px;
+            }
+            .ant-card-body > div > div:first-child {
+              padding: 0 16px 4px 0;
+
+              .ant-divider:first-child {
+                margin-top: 0;
+              }
+            }
+          }
+        }
+      }
+
+      .leaflet-container {
+        flex: 1;
+      }
+    }
+  }
+
+  .ant-layout-sider {
+    box-shadow: 2px 0 6px 0 rgba(0, 0, 0, 0.13);
+    z-index: 1028;
+  }
+
+  .ant-layout-footer {
+    background: none;
+    padding: 16px 48px;
+    z-index: 1027;
+  }
+
+  .leaflet-container {
+    font: unset;
+  }
+
+  .entity-popup {
+    .entity-popup-title {
+      align-items: center;
+      border-bottom: 1px solid lightgray;
+      display: flex;
+      padding: 4px 8px;
+      margin: 4px 0 8px;
+
+      h3 {
+        margin: 0;
+      }
+    }
+
+    .entity-popup-content {
+      padding: 8px;
+    }
+
+    .entity-popup-actions {
+      align-items: center;
+      border-top: 1px solid lightgray;
+      display: flex;
+      margin-top: 8px;
+      padding: 8px 0 0;
+
+      button:first-child {
+        margin-left: auto;
+      }
+    }
+  }
+
+  .loading-spin {
+    align-items: center;
+    bottom: 0;
+    display: flex;
+    height: 80px;
+    justify-content: center;
+    left: 0;
+    position: absolute;
+    width: 80px;
+    z-index: 1000000;
+  }
+}
+
+#root > .ant-layout.ant-layout-mobile {
+  header {
+    .logo {
+      margin: 0;
+      width: 128px;
+    }
+
+    .app-title {
+      display: none;
+    }
+
+    .btn-account {
+      box-sizing: content-box;
+      height: 32px;
+      margin-right: 16px;
+      width: 32px;
+    }
+  }
+
+  .ant-layout-sider {
+    display: none;
+  }
+
+  .ant-layout-main {
+    .ant-page-header {
+      .ant-avatar {
+        background: transparent;
+        color: @primary-color;
+        margin-right: 4px;
+      }
+
+      .ant-page-header-heading-title {
+        font-size: 18px;
+      }
+
+      .ant-page-header-heading {
+        flex-wrap: nowrap;
+      }
+    }
+
+    .ant-layout-content {
+      .ant-content-view {
+        border-radius: 0;
+        margin-left: 0;
+        margin-right: 0;
+        padding: 8px 8px;
+
+        .ant-tabs {
+          width: 100%;
+
+          .ant-tabs-content-holder {
+            display: flex;
+            flex-direction: column;
+          }
+
+          .ant-tabs-content {
+            flex: 1;
+
+            .ant-tabs-tabpane {
+              flex: 1;
+
+              .leaflet-container {
+                height: 100%;
+                width: 100%;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .ant-layout-footer {
+      background: #f1f7fc;
+    }
+  }
+
+  .leaflet-popup {
+    width: 100vw;
+
+    .leaflet-popup-content {
+      width: auto !important;
+    }
+  }
+
+  .loading-spin {
+    height: calc(32px + 1.5715em);
+    width: calc(32px + 1.5715em);
+  }
+}
+
+.ant-form > .ant-form-item:last-child {
+  margin-bottom: 0;
+}
+
+.ant-message {
+  z-index: 1000000 !important;
+}
+
+.ant-descriptions.ant-descriptions-fixed {
+  table {
+    table-layout: fixed !important;
+  }
+}
+
+.ant-modal-mask,
+.ant-modal-wrap {
+  z-index: 9999;
+}
