@@ -2,6 +2,7 @@
 Master en Desarrollo de Software
 Asignatura: “Ingeniería WEB”
 (Ingeniería Web. Una visión general IW)
+
 Módulo 1. Ejercicio 2: Implementación de un ejemplo funcional de uso de tecnologías web.
 
 ## Descripción
@@ -23,8 +24,8 @@ Si todo ha ido correcto, una vez levantado se debe poder acceder a traves de un 
 
 ## Comandos utiles
 ### En local para montarlo y ejecutarlo 
-`npm install`
-    npm run start:local
+```npm install
+npm run start:local```
 
 ### Montar Docker
 
