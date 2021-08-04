@@ -24,8 +24,10 @@ Si todo ha ido correcto, una vez levantado se debe poder acceder a traves de un 
 
 ## Comandos utiles
 ### En local para montarlo y ejecutarlo 
-```npm install
-npm run start:local```
+```
+npm install
+npm run start:local
+```
 
 ### Montar Docker
 
