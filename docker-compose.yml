@@ -4,9 +4,6 @@ services:
     image: franguerrero/iwejer2frontend
     ports:
       - "3000:3000"
-    container_name: iw-ejer2-frontend
-    links:
-      - iwejer2-backend
   iwejer2-backend:
     image: franguerrero/iwejer2backend
     ports:
@@ -19,8 +16,8 @@ services:
     ports:
       - "27017:27017"
     container_name: mongo-db
-    volumes:
-      - 7a99c72d11afab8bc8f0a3f40974d290136bb24bc6ee5fbfbb63ec67da539bb8:/data/db
-volumes:
-    7a99c72d11afab8bc8f0a3f40974d290136bb24bc6ee5fbfbb63ec67da539bb8:
-        external: true
+    
+  mongo-seed:
+    build: ./mongo-seed
+    links:
+      - mongo-db
