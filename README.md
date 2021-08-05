@@ -29,6 +29,12 @@ npm install
 npm run start:local
 ```
 
-### Montar Docker
+### Levantar el Docker Compose desde DockerHub
+Con el siguiente comando levantamos los dockers trayendolo directamente desde DockerHub cada uno de los modulos (mongo, backend y frontend)
 
-    docker build --pull --rm -f "Dockerfile" -t iwejer2frontend:latest "."
+    docker-compose -f "docker-compose.yml" up -d --build 
+
+Con el siguiente comando levantamos los dockers trayendolo directamente desde DockerHub los modulos de mongo y backend, pero ejecutando el codigo del frontend
+
+    docker-compose -f "docker-composeDockerfileLocal.yml" up -d --build 
+
